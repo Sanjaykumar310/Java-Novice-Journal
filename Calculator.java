@@ -5,20 +5,7 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
         char choice;::
 
-        do {
-            System.out.print("ENTER FIRST NUMBER: ");
-            double a = sc.nextDouble();
-
-            System.out.print("ENTER SECOND NUMBER: ");
-            double b = sc.nextDouble();
-
-            System.out.print("ENTER OPERATOR (+, -, *, /): ");
-            char op = sc.next().charAt(0);
-
-            // Calculate result using ternary operator
-            System.out.println("Result: " + (
-                op == '+' ? a + b :
-                op == '-' ? a - b :
+        
                 op == '*' ? a * b :
                 op == '/' ? (b != 0 ? a / b : "Error: Cannot divide by zero") :
                 "Error: Invalid operator"
