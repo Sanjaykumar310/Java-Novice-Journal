@@ -1,49 +1,36 @@
 
 import java.util.Scanner;
+import java.util.jar.Attributes;
+import java.util.Arrays;
 
-//Student Grade Calculator
+
+
 public class ram{
+
+    private static void  studentname (String[] name){
+                Scanner sc = new Scanner(System.in);
+                String student = sc.nextLine();
+                System.out.println("enter your name");
+                for (int i = 0; i < name.length; i++) {
+                    student += name[i];
+                    System.out.println(name);
+                }
+                
+            }
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+        System.out.print("ENTER YOUR FIRST NAME :");
+        String a = sc.nextLine();
 
-        System.out.println("ENTER YOUR 5 SUBJECTS MARKS : ");
+
+        //String stu = studentname(name);
+        System.out.print(studentname(name));
+
        
-
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        int d =  sc.nextInt();
-        int e = sc.nextInt();
-
-        int total = (a+b+c+d+e);
-        System.out.println("TOTAL :"+total);
-
-
-
-        int result = (total)/5;
-
-        System.out.println("AVERAGE : "+result);
-
-        if(result >= 50){
-            System.out.println("RESULT :PASS");
-            System.out.println("GRADE : A");
-        }
-        else if (result >= 80){
-            System.out.println("RESULT :PASS");
-            System.out.println("GRADE : B");
-        }
-        else if (result >= 90) {
-            System.out.println("RESULT : PASS");
-            System.out.println("GRADE : C");
-            
-        }
-        else {
-            System.out.println("RESULT : PASS");
-            System.out.println("Grade : F");
-        }
         
        
-        sc.close();
-        
+         sc.close();
     }
-}
+} 
