@@ -20,7 +20,7 @@ class Student {
         System.out.println("Default constructor: " + this.name);
     }
 
-    public Student(String name, int marks) {//constractor
+    public Student(String name, int marks) {// parameterized constractor
         this.name = name;
         this.marks = marks;
         System.out.println("Param constructor: " + this.name);
@@ -47,7 +47,7 @@ class Student {
         s1.show();//non-static method callin using object reference
         s2.show();//non-static method callin using object reference
 
-        Student.schoolInfo();//non-static method callin using object reference
+        Student.schoolInfo();//non-static method calling using object reference
 
         System.out.println("Main ends");
     }
