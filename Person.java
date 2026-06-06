@@ -20,5 +20,5 @@ class Person{
     }
     
 
-    
+    //to create methoads and driver class and object,then calling
 }
