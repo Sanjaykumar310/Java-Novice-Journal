@@ -21,7 +21,9 @@ class emplo{
     public void setMarks(double marks){//setter method to update or modify the data
         this.marks=marks;
     }
-    public static void main(String[] args) {
-        emplo e1 = new emplo();
+    public void emplodetails(){
+        System.out.println("Name:"+name);
+        System.out.println("Rollno:"+rollno);
+        System.out.println("Marks:"+marks);
     }
 }
