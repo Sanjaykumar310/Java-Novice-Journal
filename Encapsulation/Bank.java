@@ -13,7 +13,9 @@ class Bank{
         this.amount=amount;
     }
     public double deposit(double amount,double balance){
-        return balance+amount;
+        double Amount = balance+amount;
+        
+        return Amount;
     }
 
 }
