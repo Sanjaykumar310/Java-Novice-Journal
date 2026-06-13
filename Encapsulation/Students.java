@@ -35,6 +35,9 @@ class Students{
             grade = 'D';
         else
             grade = 'F';
+
+     void studentdetails(int marks){
+
         switch (grade) {
             case 'A':
                 System.out.println("Excellent");
@@ -57,6 +60,6 @@ class Students{
         this.marks=marks;
 
         //TO CREATE THE DRIVER CLASS /OBJECT CREATION USE CALL METHODS FOR THIS CLASS
-    
+        }
     }
 }
