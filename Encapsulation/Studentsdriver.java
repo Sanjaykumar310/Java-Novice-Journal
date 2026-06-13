@@ -1,6 +1,6 @@
 class Studentsdriver{
     public static void main(String[] args) {
-        Students s1 = new Students("ram", 65);
+        Students s1 = new Students("ram", 65);//object creation 
         s1.getname();
         s1.getmarks();
         System.out.println("name:"+s1.getname());
