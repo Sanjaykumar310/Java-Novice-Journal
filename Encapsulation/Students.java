@@ -2,9 +2,9 @@
 
 
 class Students{
-    private String name;
-    private int marks;
-    public char grade;
+    private String name;//private variable access only getter.setter method
+    private int marks;//private variable access only getter.setter method
+    public char grade;//private variable access only getter.setter method
 
     public Students(String name,int marks){
         this.marks=marks;
@@ -17,10 +17,10 @@ class Students{
         this.name=name;
 
     }
-    public  int getmarks(){
+    public  int getmarks(){//getter method read
         return marks;
     }
-    public void setmarks(){
+    public void setmarks(){//setter method read or update
         if(marks >=90 )
             grade = 'A';
 
@@ -36,7 +36,7 @@ class Students{
         else
             grade = 'F';
 
-     void studentdetails(int marks){
+     public void studentdetails(int marks){//parameterized method
 
         switch (grade) {
             case 'A':
