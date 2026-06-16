@@ -1,0 +1,3 @@
+class Specialtax extends Tax{
+    
+}
