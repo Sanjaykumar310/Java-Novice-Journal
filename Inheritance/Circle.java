@@ -4,6 +4,6 @@ class Circle extends Shape{
     @Override
     public void area(){
         
-        System.out.println("Area of Circle = πr²");
+        System.out.println("circle area");
     }
 }

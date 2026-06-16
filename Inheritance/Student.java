@@ -1,5 +1,6 @@
-class Student extends Human{
+class Student extends Person{
+    int rollNo;
     public void study(){
-        System.out.println("I study java");
+        System.out.println("Student " + name + " is studying, Roll: " + rollNo);
     }
 }
