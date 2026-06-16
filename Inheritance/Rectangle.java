@@ -3,6 +3,6 @@
 class Rectangle extends Circle{
     @Override// Method Overriding
     public void area(){
-        System.out.println("Area of Rectangle = l * b");
+        System.out.println("Rectangle area");
     }
 }
