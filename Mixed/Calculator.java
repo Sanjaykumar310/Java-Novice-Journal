@@ -1,6 +1,5 @@
 class Calculator{
 
-
     public void area(double radius){
         System.out.println("circle area");
     }
