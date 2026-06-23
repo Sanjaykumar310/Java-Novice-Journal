@@ -8,13 +8,15 @@ class Palindromenumber{
         int number = sc.nextInt();
         int rev = number;
         //while(number > 0){
-            if(number == rev && number > 0){
+        if(number > 0){
+            if(number == rev){
                 System.out.println("Palindrome Number");
 
             }
             else{
                 System.out.println("Not A Palindrome Number");
             }
+        }
 
         //}
     }
