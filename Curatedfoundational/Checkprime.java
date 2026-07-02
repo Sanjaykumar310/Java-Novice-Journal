@@ -8,18 +8,18 @@ class Checkprime{
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
         Checkprime p = new Checkprime();
-        boolean result = p.isPrime(number);
-        System.out.println(result);
+         p.isPrime(number);
+        //System.out.println();
         sc.close();
     }
-    public boolean  isPrime(int number){
+    public void   isPrime(int number){
         if(number > 0 && number % 2 == 0){
             System.out.println("prime");
         }
         else{
             System.out.println("not prime");
         }
-        return boolean;
+       // return true;
 
     }
     
