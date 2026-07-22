@@ -25,3 +25,14 @@ Why do we use the inheritance ?
     * supports runtime polymorphism,
     * easy maintaince,
     * avoid dublictes.
+
+Single Inheritanc,
+
+    The single inheritance is one parent class and one child class is known as single inheritance.
+
+Multiple Inheritance,
+
+        * The multiple inheritance we connot achieve class because it occurs the diamond problems and it can be used to achieve in interface only .
+        * The multiple inheritance is one child class and more then one parent class or two parent class here its not possible that why the diamond problems occurs .
+
+
