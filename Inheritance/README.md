@@ -17,7 +17,7 @@ Multiple Inheritance,
 
         * The multiple inheritance we connot achieve class because it occurs the diamond problems and it can be used to achieve in interface only .
 
-Other then fully we can achieve class itself.
+Other then fully we can achieve in class itself.
 
 
 Single Inheritanc,
@@ -49,3 +49,11 @@ Why do we use the inheritance ?
     * supports runtime polymorphism,
     * easy maintaince,
     * avoid dublictes.
+
+Uses of Inheritance,
+
+    * Code Reusability,
+    * Avoid Code Duplication,
+    * Easy Maintance,
+    * Method overriding.
+
