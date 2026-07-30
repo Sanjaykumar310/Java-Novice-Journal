@@ -66,3 +66,10 @@ Example
     * Reduces repeated codes,
     * Prevents uninitialized objects,
     * saves time.
+
+* Rules of constructor,
+
+    * The constructor has no return type,
+    * The constructor is automatically called,
+    * The constructor executes only once Per object.
+    * The constructor name must be same as the class name.
