@@ -73,3 +73,18 @@ Example
     * The constructor is automatically called,
     * The constructor executes only once Per object.
     * The constructor name must be same as the class name.
+
+what is meant by "this" ?
+    * this  is a keyword and used to reference variable that refer the  current object class
+
+what is meant by  Constructor Overloding ?
+
+    * constructor overloading means creating multiple constructor same class with diffrent parameterized list
+example :
+    Camera(),
+
+    Camera(int cameraId),
+
+    Camera(int cameraId, String brand),
+
+    Camera(int cameraId, String brand, double price),
