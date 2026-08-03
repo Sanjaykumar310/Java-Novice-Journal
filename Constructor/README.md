@@ -87,4 +87,5 @@ example :
 
     Camera(int cameraId, String brand),
 
-    Camera(int cameraId, String brand, double price),
+    Camera(int cameraId, String brand, double price).
+
