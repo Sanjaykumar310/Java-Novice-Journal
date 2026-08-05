@@ -89,3 +89,15 @@ example :
 
     Camera(int cameraId, String brand, double price).
 
+Constructor chaining (this()) ?
+
+    * The constructor chaining means used to call one constructor from another constructor in same class or parent class.
+
+this(),
+
+    call another constructor of the same class.
+
+Important Rules,
+
+    * The this() is first statement of the constructor in a class,
+    * A constructor can call only one constructor directly call .
