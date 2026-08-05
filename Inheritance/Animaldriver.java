@@ -1,8 +1,11 @@
-class Animaldriver{
-    public static void main(String[] args) {
-        Dog d1 =new Dog();
-        d1.bark();
-        d1.breathe();
+class Animal {
+    public void breathe() {
+        System.out.println("Breathing");
+    }
+}
 
+class Dog extends Animal {
+    public void bark() {
+        System.out.println("Woof");
     }
 }
