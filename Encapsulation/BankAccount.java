@@ -35,6 +35,12 @@ class BankAccount{
         return accountHolder;
     }
     public  void setbalance(double balance){
+        if (balance >= 0){
+            this.balance = balance;
+        }
+        else{
+            System.out.println("Balance cannot be negative");
+        }
 
     }
     public double getbalance(){
@@ -43,7 +49,9 @@ class BankAccount{
 
     public void deposit(double amount){
         if(amount > 0){
+            balance = balance + amount;
             System.out.println("Deposited :"+amount);
+            System.out.println("Current Balance :"+ balance);
         }
         else{
             System.out.println("Deposit amount should be greater than 0");
@@ -51,7 +59,9 @@ class BankAccount{
     }
     public void withdraw(double amount){
         if(amount > 0 && amount <= balance){
+            balance = balance - amount;
             System.out.println("Withdraw :"+amount);
+            System.out.println("Current Balance :"+ balance);
         }
         else{
             System.out.println("Insufficient Balance");
