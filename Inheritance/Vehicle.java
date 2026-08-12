@@ -1,7 +1,30 @@
-//Create a class Vehicle with a constructor that takes brand (String) and prints "Vehicle brand: Honda".
-
 class Vehicle{
-    public Vehicle(){
-        System.out.println("Vehicle brand: Honda");
+    
+    String brand;
+    String color;
+
+void start(){
+    System.out.println("Vehicle is starting");
+}
+
+}
+
+class Car extends Vehicle{
+
+    int numberOfDoors;
+
+void drive(){
+    System.out.println("Car is driving");
+}
+
+}
+
+class Vehicledriver{
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.brand = "innova";
+        c.color = "black";
+        c.start();
+        c.drive();
     }
 }
