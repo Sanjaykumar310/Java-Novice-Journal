@@ -1,38 +1,35 @@
-
 class Vehicle {
 
-    private int vehicleNumber;
+    private String vehicleNumber;
     private String vehicleType;
 
-    public Vehicle(int vehicleNumber, String vehicleType) { // constructor
+    public Vehicle(String vehicleNumber, String vehicleType) {
         this.vehicleNumber = vehicleNumber;
         this.vehicleType = vehicleType;
     }
 
-    public int getVehicleNumber() {
+    public String getVehicleNumber() {
         return vehicleNumber;
     }
 
-    public void setVehicleNumber() {
-
+    public void setVehicleNumber(String vehicleNumber) {
         this.vehicleNumber = vehicleNumber;
-
     }
 
     public String getVehicleType() {
-
         return vehicleType;
     }
 
-    public void setVehicleType() {
+    public void setVehicleType(String vehicleType) {
         this.vehicleType = vehicleType;
     }
 
-    public void Vehicledetails(int vehicleNumber, String vehicleType) {//method
-        System.out.println("vehicleNumber :" + vehicleNumber);
-        System.out.println("vehicleType :" + vehicleType);
+    public void vehicleDetails() {
+        System.out.println("Vehicle Number : " + vehicleNumber);
+        System.out.println("Vehicle Type : " + vehicleType);
     }
 }
+
 
 class ParkingSlot {
 
@@ -40,19 +37,24 @@ class ParkingSlot {
     private boolean isOccupied;
     private Vehicle vehicle;
 
-    public int getslotNumber() {
+    public ParkingSlot(int slotNumber, boolean isOccupied) {
+        this.slotNumber = slotNumber;
+        this.isOccupied = isOccupied;
+    }
+
+    public int getSlotNumber() {
         return slotNumber;
     }
 
-    public void setslotNumber() {
+    public void setSlotNumber(int slotNumber) {
         this.slotNumber = slotNumber;
     }
 
-    public boolean getisOccupied() {
+    public boolean getIsOccupied() {
         return isOccupied;
     }
 
-    public void setisOccupied() {
+    public void setIsOccupied(boolean isOccupied) {
         this.isOccupied = isOccupied;
     }
 
@@ -62,34 +64,41 @@ class ParkingSlot {
 
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
-    }
-
-    public ParkingSlot(int slotNumber, boolean isOccupied) {//constructor
-        this.slotNumber = slotNumber;
-        this.isOccupied = isOccupied;
+        this.isOccupied = true;
     }
 
     public void parkVehicle(Vehicle vehicle) {
-        if (slotNumber == 0) {
-            System.out.println("park vehicle.");
+
+        if (!isOccupied) {
+            this.vehicle = vehicle;
+            this.isOccupied = true;
+
+            System.out.println("Vehicle parked successfully.");
         } else {
-            System.out.println("Slot already occupied");
+            System.out.println("Slot already occupied.");
         }
     }
 
-}
+    public void removeVehicle() {
 
-class Car {
+        this.vehicle = null;
+        this.isOccupied = false;
 
-    int carNumber;
-    String brand;
-    String color;
-
-    public void Cardetails() {//method
-        System.out.println("Car Number :" + carNumber);
-        System.out.println("Brand :" + brand);
-        System.out.println("Color :" + color);
+        System.out.println("Vehicle removed.");
     }
 
+    public void displaySlotDetails() {
+
+        System.out.println("Slot Number : " + slotNumber);
+
+        if (isOccupied) {
+            System.out.println("Status : Occupied");
+            System.out.println("Vehicle Number : "
+                    + vehicle.getVehicleNumber());
+            System.out.println("Vehicle Type : "
+                    + vehicle.getVehicleType());
+        } else {
+            System.out.println("Status : Available");
+        }
+    }
 }
-//level 4 pending so starthere4
